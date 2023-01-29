@@ -26,7 +26,6 @@ test('displays the users current location', async () => {
 
   render(<Location />)
   expect(screen.queryByLabelText(/loading/i)).toBeInTheDocument()
-  screen.debug()
 
   act(() => {
     setReturnValue([fakePosition])
